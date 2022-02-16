@@ -13,5 +13,20 @@ namespace CouncilWise
         public decimal UnitPrice { get; set; }
         public bool IncludesTax { get; set; }
         public decimal TaxAmount { get; set; }
+
+        public override string ToString()
+        {
+            
+            return @$"
+                    {Name}
+                    {Quantity}		{UnitPrice}		{IncludesTax}";
+        }
+        public bool IsPalindrome()
+        {
+             return Name.SequenceEqual(Name.Reverse());
+
+        }
     }
 }
+
+
