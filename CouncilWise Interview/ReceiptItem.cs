@@ -19,7 +19,7 @@ namespace CouncilWise
             
             return @$"
                     {Name}
-                    {Quantity}		{UnitPrice}		{IncludesTax}";
+                    {Quantity}		{UnitPrice.CurrencyRound()}		{IncludesTax}";
         }
         public bool IsPalindrome()
         {

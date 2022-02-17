@@ -23,8 +23,8 @@ namespace CouncilWise
                 Items:
                     {printitems}
                     ... for all receipt items
-                Total:   {Total}
-                GST:     {TaxTotal} ";
+                Total:   {Total.CurrencyRound()}
+                GST:     {TaxTotal.CurrencyRound()} ";
 
         }
 
